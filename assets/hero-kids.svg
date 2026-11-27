@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1066" width="100%" height="100%">
+  <defs>
+    <!-- Background Aura -->
+    <radialGradient id="bgGlowKids" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#faedd6" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#fdf6e9" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#fdf9f0" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Skin Tones for Cheerful Indian Kid -->
+    <linearGradient id="skinKids" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8b688"/>
+      <stop offset="50%" stop-color="#dba372"/>
+      <stop offset="100%" stop-color="#c68a56"/>
+    </linearGradient>
+    <linearGradient id="skinShadowKids" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c68a56"/>
+      <stop offset="100%" stop-color="#a86e3c"/>
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hairKids" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#2a1f1d"/>
+      <stop offset="50%" stop-color="#19110f"/>
+      <stop offset="100%" stop-color="#0a0706"/>
+    </linearGradient>
+
+    <!-- Streetwear Colorblock Hoodie -->
+    <linearGradient id="hoodieYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe45c"/>
+      <stop offset="60%" stop-color="#ffd500"/>
+      <stop offset="100%" stop-color="#f0c200"/>
+    </linearGradient>
+    <linearGradient id="hoodieBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="60%" stop-color="#0a2a94"/>
+      <stop offset="100%" stop-color="#071a5c"/>
+    </linearGradient>
+    <linearGradient id="hoodieCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7675"/>
+      <stop offset="100%" stop-color="#d63031"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="softShadowKids" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0a2a94" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="500" r="380" fill="url(#bgGlowKids)"/>
+
+  <!-- Playful Decorative Sparkles -->
+  <g opacity="0.6">
+    <path d="M220 300 Q235 315 250 300 Q235 285 220 300 Z" fill="#ffd500"/>
+    <path d="M580 320 Q595 335 610 320 Q595 305 580 320 Z" fill="#0a2a94"/>
+    <circle cx="210" cy="460" r="8" fill="#ff7675"/>
+    <circle cx="600" cy="480" r="10" fill="#ffd500"/>
+  </g>
+
+  <!-- Body & Colorblock Streetwear Hoodie -->
+  <g id="bodyKids" filter="url(#softShadowKids)">
+    <!-- Neck -->
+    <path d="M365 390 L435 390 L440 460 L360 460 Z" fill="url(#skinShadowKids)"/>
+
+    <!-- Large Cozy Hoodie Collar/Back -->
+    <path d="M300 440 C330 400 470 400 500 440 C530 480 270 480 300 440 Z" fill="url(#hoodieBlue)"/>
+
+    <!-- Main Colorblock Hoodie -->
+    <!-- Left Half: Sunny Yellow -->
+    <path d="M250 490 C290 450 395 440 400 450 L395 760 C320 760 250 720 230 630 Z" fill="url(#hoodieYellow)"/>
+    <!-- Right Half: Royal Blue -->
+    <path d="M550 490 C510 450 405 440 400 450 L405 760 C480 760 550 720 570 630 Z" fill="url(#hoodieBlue)"/>
+
+    <!-- Center Kangaroo Pocket (Coral Accent) -->
+    <path d="M310 620 L490 620 L510 720 L290 720 Z" fill="url(#hoodieCoral)"/>
+    <!-- Pocket Branding Patch -->
+    <rect x="365" y="650" width="70" height="30" rx="6" fill="#ffffff"/>
+    <text x="400" y="669" fill="#0a2a94" font-family="'Space Grotesk',sans-serif" font-weight="900" font-size="12" text-anchor="middle" letter-spacing="1">KILO</text>
+
+    <!-- Hoodie Strings -->
+    <path d="M370 460 C370 530 360 560 360 570" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="360" cy="573" r="4" fill="#ffd500"/>
+    <path d="M430 460 C430 530 440 560 440 570" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="440" cy="573" r="4" fill="#ffd500"/>
+  </g>
+
+  <!-- Happy Cherubic Head & Face -->
+  <g id="headKids">
+    <!-- Soft Rounded Face Contour -->
+    <path d="M310 270 C310 170 490 170 490 270 C490 380 445 425 400 425 C355 425 310 380 310 270 Z" fill="url(#skinKids)"/>
+    <!-- Cute Chubby Cheeks Blush -->
+    <circle cx="338" cy="325" r="26" fill="#ff7675" opacity="0.3"/>
+    <circle cx="462" cy="325" r="26" fill="#ff7675" opacity="0.3"/>
+
+    <!-- Big Expressive Cheerful Eyes -->
+    <!-- Left Eye -->
+    <ellipse cx="360" cy="285" rx="14" ry="16" fill="#ffffff"/>
+    <ellipse cx="362" cy="285" rx="10" ry="12" fill="#1e130c"/>
+    <circle cx="366" cy="280" r="4" fill="#ffffff"/>
+    <circle cx="358" cy="290" r="2" fill="#ffffff"/>
+    <!-- Cute Brow -->
+    <path d="M342 260 Q362 250 380 260" fill="none" stroke="url(#hairKids)" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Right Eye -->
+    <ellipse cx="440" cy="285" rx="14" ry="16" fill="#ffffff"/>
+    <ellipse cx="438" cy="285" rx="10" ry="12" fill="#1e130c"/>
+    <circle cx="442" cy="280" r="4" fill="#ffffff"/>
+    <circle cx="434" cy="290" r="2" fill="#ffffff"/>
+    <!-- Cute Brow -->
+    <path d="M420 260 Q438 250 458 260" fill="none" stroke="url(#hairKids)" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Button Nose -->
+    <path d="M400 295 Q395 318 400 318 Q405 318 400 295" fill="none" stroke="url(#skinShadowKids)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Joyful Wide Open Smile -->
+    <path d="M358 345 Q400 350 442 345 Q400 395 358 345 Z" fill="#d63031"/>
+    <!-- Pearly Teeth -->
+    <path d="M366 347 Q400 351 434 347 Q400 365 366 347 Z" fill="#ffffff"/>
+    <!-- Cute Tongue -->
+    <path d="M380 375 Q400 360 420 375 Q400 393 380 375 Z" fill="#ff7675"/>
+
+    <!-- Ears -->
+    <circle cx="308" cy="295" r="15" fill="url(#skinKids)"/>
+    <circle cx="492" cy="295" r="15" fill="url(#skinKids)"/>
+
+    <!-- Cute Messy Boy/Girl Streetwear Haircut -->
+    <path d="M305 250 C300 170 340 120 400 120 C460 120 500 170 495 250 C485 200 455 170 400 170 C345 170 315 200 305 250 Z" fill="url(#hairKids)"/>
+    <!-- Sprightly Bangs / Fringe -->
+    <path d="M320 220 Q350 250 370 230 Q390 260 415 235 Q445 260 475 220 C460 180 430 160 400 160 C360 160 330 180 320 220 Z" fill="url(#hairKids)"/>
+    <path d="M375 140 Q410 115 440 135" stroke="#3d2a27" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Lower Body / Streetwear Joggers Preview -->
+  <g id="lowerBodyKids">
+    <path d="M290 740 C290 710 510 710 510 740 L535 1000 L265 1000 Z" fill="#2d3436"/>
+    <!-- Jogger Side Stripes (Mustard & Blue) -->
+    <line x1="280" y1="750" x2="270" y2="1000" stroke="#ffd500" stroke-width="6"/>
+    <line x1="520" y1="750" x2="530" y2="1000" stroke="#0a2a94" stroke-width="6"/>
+  </g>
+</svg>

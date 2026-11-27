@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1066" width="100%" height="100%">
+  <defs>
+    <!-- Background Aura -->
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#faedd6" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#fdf6e9" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#fdf9f0" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Skin Tones -->
+    <linearGradient id="skinBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2ab7a"/>
+      <stop offset="50%" stop-color="#d49964"/>
+      <stop offset="100%" stop-color="#be804a"/>
+    </linearGradient>
+    <linearGradient id="skinShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#be804a"/>
+      <stop offset="100%" stop-color="#a46938"/>
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hairGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#2a1b24"/>
+      <stop offset="40%" stop-color="#190f15"/>
+      <stop offset="100%" stop-color="#0a0508"/>
+    </linearGradient>
+    <linearGradient id="hairHighlight" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#4a303e" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#190f15" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Jacket / Fabric Gradients -->
+    <linearGradient id="jacketBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1945be"/>
+      <stop offset="50%" stop-color="#0a2a94"/>
+      <stop offset="100%" stop-color="#051754"/>
+    </linearGradient>
+    <linearGradient id="kurtiYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe45c"/>
+      <stop offset="60%" stop-color="#ffd500"/>
+      <stop offset="100%" stop-color="#e0b800"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffeaa7"/>
+      <stop offset="50%" stop-color="#fdcb6e"/>
+      <stop offset="100%" stop-color="#e17055"/>
+    </linearGradient>
+
+    <!-- Folded Clothes Stack -->
+    <linearGradient id="cloth1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7675"/>
+      <stop offset="50%" stop-color="#d63031"/>
+      <stop offset="100%" stop-color="#b71540"/>
+    </linearGradient>
+    <linearGradient id="cloth2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#74b9ff"/>
+      <stop offset="50%" stop-color="#0984e3"/>
+      <stop offset="100%" stop-color="#0a2a94"/>
+    </linearGradient>
+    <linearGradient id="cloth3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffeaa7"/>
+      <stop offset="50%" stop-color="#fdcb6e"/>
+      <stop offset="100%" stop-color="#f39c12"/>
+    </linearGradient>
+    <linearGradient id="cloth4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f1f2f6"/>
+      <stop offset="100%" stop-color="#ced6e0"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0a2a94" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="500" r="380" fill="url(#bgGlow)"/>
+
+  <!-- Back Hair Waves -->
+  <g id="backHair">
+    <path d="M230 320 C180 440 170 650 240 760 C260 790 290 770 290 730 C290 640 260 520 280 400 Z" fill="url(#hairGrad)"/>
+    <path d="M570 320 C620 440 630 650 560 760 C540 790 510 770 510 730 C510 640 540 520 520 400 Z" fill="url(#hairGrad)"/>
+  </g>
+
+  <!-- Torso & Clothing Base -->
+  <g id="body" filter="url(#softShadow)">
+    <!-- Neck -->
+    <path d="M365 370 L435 370 L445 460 L355 460 Z" fill="url(#skinShadow)"/>
+    <path d="M370 370 C370 410 430 410 430 370 Z" fill="url(#skinBase)"/>
+
+    <!-- Inner Top / Kurti -->
+    <path d="M330 440 L470 440 L480 620 L320 620 Z" fill="url(#kurtiYellow)"/>
+    <!-- Decorative Neckline -->
+    <path d="M375 440 C375 490 425 490 425 440" fill="none" stroke="url(#goldShine)" stroke-width="4"/>
+
+    <!-- Chic Denim Over-Jacket -->
+    <path d="M250 470 C280 450 340 440 370 450 L360 680 C310 680 250 640 240 590 Z" fill="url(#jacketBlue)"/>
+    <path d="M550 470 C520 450 460 440 430 450 L440 680 C490 680 550 640 560 590 Z" fill="url(#jacketBlue)"/>
+
+    <!-- Jacket Collar -->
+    <path d="M350 445 L380 520 L345 535 L330 455 Z" fill="#1e4ec9"/>
+    <path d="M450 445 L420 520 L455 535 L470 455 Z" fill="#1e4ec9"/>
+    <!-- Jacket Buttons -->
+    <circle cx="355" cy="565" r="4" fill="url(#goldShine)"/>
+    <circle cx="445" cy="565" r="4" fill="url(#goldShine)"/>
+  </g>
+
+  <!-- Head & Facial Features -->
+  <g id="head">
+    <!-- Face Contour -->
+    <path d="M320 270 C320 180 480 180 480 270 C480 370 440 410 400 410 C360 410 320 370 320 270 Z" fill="url(#skinBase)"/>
+    <!-- Cheeks Blush -->
+    <circle cx="345" cy="315" r="22" fill="#e17055" opacity="0.25"/>
+    <circle cx="455" cy="315" r="22" fill="#e17055" opacity="0.25"/>
+
+    <!-- Eyes (Almond Indian Eyes) -->
+    <!-- Left Eye -->
+    <path d="M345 285 Q365 272 385 285 Q365 295 345 285 Z" fill="#ffffff"/>
+    <ellipse cx="365" cy="284" rx="7" ry="7" fill="#2d1b17"/>
+    <circle cx="367" cy="282" r="2.5" fill="#ffffff"/>
+    <path d="M340 286 Q365 268 390 283" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+    <!-- Left Eyelash & Brow -->
+    <path d="M388 281 L396 276" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+    <path d="M338 266 Q365 254 388 266" fill="none" stroke="#1d1217" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Right Eye -->
+    <path d="M415 285 Q435 272 455 285 Q435 295 415 285 Z" fill="#ffffff"/>
+    <ellipse cx="435" cy="284" rx="7" ry="7" fill="#2d1b17"/>
+    <circle cx="437" cy="282" r="2.5" fill="#ffffff"/>
+    <path d="M410 283 Q435 268 460 286" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+    <!-- Right Eyelash & Brow -->
+    <path d="M460 284 L468 279" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+    <path d="M412 266 Q435 254 462 266" fill="none" stroke="#1d1217" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Traditional Elegant Indian Bindi -->
+    <circle cx="400" cy="258" r="3.5" fill="#d63031"/>
+    <circle cx="400" cy="258" r="1.5" fill="url(#goldShine)"/>
+
+    <!-- Nose -->
+    <path d="M400 280 L395 315 L405 315" fill="none" stroke="url(#skinShadow)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Delicate Septum/Nose Pin Dot -->
+    <circle cx="392" cy="314" r="1.8" fill="url(#goldShine)"/>
+
+    <!-- Warm Smiling Lips -->
+    <path d="M375 342 Q400 348 425 342 Q400 368 375 342 Z" fill="#d63031"/>
+    <path d="M380 343 Q400 347 420 343 Q400 354 380 343 Z" fill="#ffffff"/>
+
+    <!-- Gold Traditional Jhumka Earrings -->
+    <!-- Left Earring -->
+    <circle cx="316" cy="305" r="4" fill="url(#goldShine)"/>
+    <path d="M312 312 L320 312 L322 324 L310 324 Z" fill="url(#goldShine)"/>
+    <circle cx="316" cy="327" r="2" fill="url(#goldShine)"/>
+    <!-- Right Earring -->
+    <circle cx="484" cy="305" r="4" fill="url(#goldShine)"/>
+    <path d="M480 312 L488 312 L490 324 L478 324 Z" fill="url(#goldShine)"/>
+    <circle cx="484" cy="327" r="2" fill="url(#goldShine)"/>
+
+    <!-- Front Hair Style (Side Parting with Gloss) -->
+    <path d="M320 260 C320 170 480 170 480 260 C460 210 420 220 380 230 C340 240 325 250 320 260 Z" fill="url(#hairGrad)"/>
+    <path d="M320 260 C310 310 330 380 335 400 C345 360 335 300 340 260 Z" fill="url(#hairGrad)"/>
+    <path d="M480 260 C490 310 470 380 465 400 C455 360 465 300 460 260 Z" fill="url(#hairGrad)"/>
+    <!-- Hair Shimmer -->
+    <path d="M350 200 Q400 185 450 205 Q400 195 350 200 Z" fill="url(#hairHighlight)"/>
+  </g>
+
+  <!-- Folded Clothes Stack Held in Hands (Core Kilo Kulture Feature) -->
+  <g id="foldedClothesStack" transform="translate(0, 50)">
+    <!-- Shadow under stack -->
+    <ellipse cx="400" cy="650" rx="170" ry="22" fill="#000000" opacity="0.15"/>
+
+    <!-- Bottom Layer: Heavy Denim Jeans -->
+    <rect x="250" y="590" width="300" height="42" rx="14" fill="url(#cloth2)"/>
+    <path d="M260 610 L540 610" stroke="#74b9ff" stroke-width="2" stroke-dasharray="6,4" opacity="0.7"/>
+
+    <!-- Layer 2: Sunny Yellow Cotton T-Shirt -->
+    <rect x="260" y="555" width="280" height="38" rx="12" fill="url(#cloth3)"/>
+
+    <!-- Layer 3: Crimson Red Designer Kurti / Shirt -->
+    <rect x="255" y="520" width="290" height="38" rx="12" fill="url(#cloth1)"/>
+    <!-- Fold Tag / Accent -->
+    <rect x="490" y="528" width="30" height="20" rx="4" fill="#ffffff" opacity="0.9"/>
+    <path d="M495 538 L515 538" stroke="#111" stroke-width="2"/>
+
+    <!-- Top Layer: Crisp White Branded Tee -->
+    <rect x="270" y="488" width="260" height="35" rx="10" fill="url(#cloth4)"/>
+    <!-- Branded Label Ribbon -->
+    <rect x="375" y="488" width="50" height="14" rx="2" fill="#0a2a94"/>
+    <text x="400" y="498" fill="#ffd500" font-family="'Space Grotesk',sans-serif" font-weight="900" font-size="7" text-anchor="middle" letter-spacing="1">KILO</text>
+
+    <!-- Woman's Hands Holding the Stack -->
+    <!-- Left Hand -->
+    <g transform="translate(230, 545)">
+      <path d="M0 25 C15 15 45 10 55 20 C60 25 55 45 40 50 C25 55 5 45 0 25 Z" fill="url(#skinBase)"/>
+      <circle cx="20" cy="30" r="14" fill="url(#goldShine)"/> <!-- Gold bangle -->
+    </g>
+    <!-- Right Hand -->
+    <g transform="translate(515, 545)">
+      <path d="M55 25 C40 15 10 10 0 20 C-5 25 0 45 15 50 C30 55 50 45 55 25 Z" fill="url(#skinBase)"/>
+      <circle cx="35" cy="30" r="14" fill="url(#goldShine)"/> <!-- Gold bangle -->
+    </g>
+  </g>
+
+  <!-- Bottom Fashion Pedestal / Lower Body -->
+  <g id="lowerBody">
+    <path d="M300 750 C300 700 500 700 500 750 L530 1000 L270 1000 Z" fill="#2d3436" opacity="0.9"/>
+  </g>
+</svg>

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1066" width="100%" height="100%">
+  <defs>
+    <!-- Background Aura -->
+    <radialGradient id="bgGlowMen" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#faedd6" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#fdf6e9" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#fdf9f0" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Skin Tones for Handsome Indian Man -->
+    <linearGradient id="skinMen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dd9f6e"/>
+      <stop offset="50%" stop-color="#ce8e5c"/>
+      <stop offset="100%" stop-color="#b27341"/>
+    </linearGradient>
+    <linearGradient id="skinShadowMen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b27341"/>
+      <stop offset="100%" stop-color="#8e5325"/>
+    </linearGradient>
+
+    <!-- Hair & Beard Gradient -->
+    <linearGradient id="hairMen" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#241a18"/>
+      <stop offset="50%" stop-color="#140c0b"/>
+      <stop offset="100%" stop-color="#050302"/>
+    </linearGradient>
+
+    <!-- Jacket & Clothes -->
+    <linearGradient id="jacketMen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d5a80"/>
+      <stop offset="50%" stop-color="#293241"/>
+      <stop offset="100%" stop-color="#1b2029"/>
+    </linearGradient>
+    <linearGradient id="shirtMen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd500"/>
+      <stop offset="60%" stop-color="#e6be00"/>
+      <stop offset="100%" stop-color="#c49f00"/>
+    </linearGradient>
+    <linearGradient id="collarAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ee6c4d"/>
+      <stop offset="100%" stop-color="#d9534f"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="softShadowMen" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#0a2a94" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="500" r="380" fill="url(#bgGlowMen)"/>
+
+  <!-- Torso & Streetwear Clothing -->
+  <g id="bodyMen" filter="url(#softShadowMen)">
+    <!-- Broad Shoulders & Neck -->
+    <path d="M350 370 L450 370 L465 470 L335 470 Z" fill="url(#skinShadowMen)"/>
+    <path d="M355 370 C355 420 445 420 445 370 Z" fill="url(#skinMen)"/>
+
+    <!-- Inner Mustard T-Shirt -->
+    <path d="M320 450 L480 450 L490 680 L310 680 Z" fill="url(#shirtMen)"/>
+    <!-- Collar Detail -->
+    <path d="M365 450 C365 500 435 500 435 450" fill="none" stroke="#222" stroke-width="4"/>
+
+    <!-- Stylish Layered Denim / Urban Jacket -->
+    <path d="M210 480 C260 450 330 440 370 455 L355 780 C290 770 210 720 195 640 Z" fill="url(#jacketMen)"/>
+    <path d="M590 480 C540 450 470 440 430 455 L445 780 C510 770 590 720 605 640 Z" fill="url(#jacketMen)"/>
+
+    <!-- Jacket Collar & Lapels -->
+    <path d="M330 450 L375 560 L335 580 L305 470 Z" fill="#3d5a80"/>
+    <path d="M470 450 L425 560 L465 580 L495 470 Z" fill="#3d5a80"/>
+    <path d="M335 455 L370 550" stroke="#ffd500" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <path d="M465 455 L430 550" stroke="#ffd500" stroke-width="2.5" stroke-dasharray="6,4"/>
+
+    <!-- Pockets & Details -->
+    <rect x="250" y="580" width="80" height="70" rx="8" fill="#202733"/>
+    <rect x="470" y="580" width="80" height="70" rx="8" fill="#202733"/>
+    <circle cx="290" cy="595" r="4" fill="#ffd500"/>
+    <circle cx="510" cy="595" r="4" fill="#ffd500"/>
+  </g>
+
+  <!-- Head, Hair & Facial Grooming -->
+  <g id="headMen">
+    <!-- Jaw & Face Contour (Chiseled Handsome Indian Structure) -->
+    <path d="M315 250 C315 160 485 160 485 250 C485 360 445 405 400 405 C355 405 315 360 315 250 Z" fill="url(#skinMen)"/>
+
+    <!-- Groomed Stylish Indian Stubble / Beard -->
+    <path d="M330 290 C330 380 370 405 400 405 C430 405 470 380 470 290 C465 340 440 375 400 375 C360 375 335 340 330 290 Z" fill="url(#hairMen)" opacity="0.85"/>
+    <!-- Mustache -->
+    <path d="M365 335 Q400 328 435 335 Q400 348 365 335 Z" fill="url(#hairMen)"/>
+
+    <!-- Eyes (Sharp & Expressive) -->
+    <!-- Left Eye -->
+    <path d="M340 270 Q365 258 388 270 Q365 280 340 270 Z" fill="#ffffff"/>
+    <circle cx="366" cy="269" r="6.5" fill="#1e130c"/>
+    <circle cx="368" cy="267" r="2.2" fill="#ffffff"/>
+    <path d="M336 269 Q365 254 392 268" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+    <!-- Left Brow (Strong & Groomed) -->
+    <path d="M330 250 Q365 238 392 250" fill="none" stroke="url(#hairMen)" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Right Eye -->
+    <path d="M412 270 Q435 258 460 270 Q435 280 412 270 Z" fill="#ffffff"/>
+    <circle cx="434" cy="269" r="6.5" fill="#1e130c"/>
+    <circle cx="436" cy="267" r="2.2" fill="#ffffff"/>
+    <path d="M408 268 Q435 254 464 269" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+    <!-- Right Brow -->
+    <path d="M408 250 Q435 238 470 250" fill="none" stroke="url(#hairMen)" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M400 255 L394 305 L406 305" fill="none" stroke="url(#skinShadowMen)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Confident Warm Smile -->
+    <path d="M372 348 Q400 354 428 348 Q400 374 372 348 Z" fill="#b33939"/>
+    <path d="M376 349 Q400 353 424 349 Q400 360 376 349 Z" fill="#ffffff"/>
+
+    <!-- Ears -->
+    <path d="M312 260 C302 260 302 300 315 305 Z" fill="url(#skinMen)"/>
+    <path d="M488 260 C498 260 498 300 485 305 Z" fill="url(#skinMen)"/>
+
+    <!-- Modern Textured Fade Hairstyle -->
+    <path d="M310 240 C305 180 340 125 400 120 C460 125 495 180 490 240 C480 200 450 160 400 160 C350 160 320 200 310 240 Z" fill="url(#hairMen)"/>
+    <!-- Volume Top Waves -->
+    <path d="M330 160 C360 120 440 115 475 150 C455 130 420 125 390 130 C360 135 340 145 330 160 Z" fill="#2d211e"/>
+    <!-- Fade Sides -->
+    <path d="M310 230 L315 285 L325 285 L320 220 Z" fill="url(#hairMen)" opacity="0.6"/>
+    <path d="M490 230 L485 285 L475 285 L480 220 Z" fill="url(#hairMen)" opacity="0.6"/>
+  </g>
+
+  <!-- Lower Body / Trousers Preview -->
+  <g id="lowerBodyMen">
+    <path d="M280 750 C280 710 520 710 520 750 L545 1000 L255 1000 Z" fill="#1b2029"/>
+    <path d="M400 760 L400 1000" stroke="#0a2a94" stroke-width="3" opacity="0.5"/>
+  </g>
+</svg>

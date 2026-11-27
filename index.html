@@ -14,46 +14,134 @@
 </head>
 <body>
 
-<header class="nav" id="nav">
-  <a class="nav__brand" href="#top" aria-label="Kilo Kulture home"><img src="assets/logo.png" alt="Kilo Kulture, Weighing Fashion" width="56" height="56"></a>
-  <nav class="nav__links" id="menu">
-    <a href="#idea">How it works</a>
-    <a href="#racks">Racks</a>
-    <a href="#haul">Plan a haul</a>
-    <a href="#stores">Stores</a>
-    <a href="#faq">Questions</a>
-  </nav>
-  <a class="btn btn--blue nav__cta" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">Instagram</a>
-  <button class="nav__toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
+<header class="nav-bar">
+  <div class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="Kilo Kulture home">
+      <img src="assets/logo.png" alt="Kilo Kulture Logo" width="42" height="42">
+      <span class="nav__brand-name">Kilo Kulture</span>
+    </a>
+    <nav class="nav__links" id="menu">
+      <a href="#idea">How it works</a>
+      <a href="#lookbook">Curated Racks</a>
+      <a href="#racks">Racks</a>
+      <a href="#haul">Plan a haul</a>
+      <a href="#stores">Stores</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="nav__cta" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">
+      <span>Instagram</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+    </a>
+    <button class="nav__toggle" aria-label="Menu" aria-controls="menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
 </header>
 
 <main id="top">
 
-<section class="hero">
-  <div class="hero__copy">
-    <p class="eyebrow">YOUR BRAND. YOUR IDENTITY.</p>
-    <h1>Ideas That Make Your Brand Stand Out.</h1>
-    <p class="lead">We help businesses build a powerful digital presence through creative design, innovative solutions, and impactful brand experiences.</p>
-    <div class="hero__actions">
-      <a class="btn btn--blue" href="#haul">Plan your haul</a>
-      <a class="btn btn--ghost" href="#stores">Find a store</a>
+<section class="hero" id="hero">
+  <div class="wrap hero__container">
+    <div class="hero__copy">
+      <h1 class="hero__title">Fashion<br>by Weight.</h1>
+      <p class="hero__lead">Your favourite styles, priced by weight. Pick your clothes, weigh your collection, and pay by the kilogram. More fashion, one simple way to shop.</p>
+
+      <div class="hero__actions">
+        <a class="btn hero__btn-visit" href="#stores">
+          <span>VISIT NOW</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a class="btn btn--ghost" href="#lookbook">Explore Racks</a>
+      </div>
+
+      <div class="hero__stats-card">
+        <div class="hero__stat-item">
+          <div class="hero__stat-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="hero__stat-data">
+            <b class="hero__stat-num">5+</b>
+            <span class="hero__stat-label">Stores in Gujarat</span>
+          </div>
+        </div>
+
+        <div class="hero__stat-divider" aria-hidden="true"></div>
+
+        <div class="hero__stat-item">
+          <div class="hero__stat-icon hero__stat-icon--orange" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="hero__stat-data">
+            <b class="hero__stat-num hero__stat-num--orange">10,000+</b>
+            <span class="hero__stat-label">Happy Shoppers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3D Yellow Curved Arrow between headline copy and model visual -->
+    <div class="hero__pointer-arrow" aria-hidden="true">
+      <img src="assets/yellow-arrow.png" alt="" width="220" height="73" loading="eager">
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__stage">
+        <!-- Model 1: Women (Default - Indian Woman holding Clothes) -->
+        <div class="hero__model is-active" id="modelWomen" data-gender="women">
+          <div class="hero__frame">
+            <img src="assets/hero-women.png" alt="Indian woman model holding folded clothes at Kilo Kulture" width="935" height="1024">
+          </div>
+        </div>
+
+        <!-- Model 2: Men (Indian Man in casual overshirt & white tee) -->
+        <div class="hero__model" id="modelMen" data-gender="men">
+          <div class="hero__frame">
+            <img src="assets/hero-men.png" alt="Indian man model smiling in casual clothes at Kilo Kulture" width="792" height="1024" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Model 3: Children (Indian Boy in denim jacket & yellow hoodie) -->
+        <div class="hero__model" id="modelKids" data-gender="children">
+          <div class="hero__frame">
+            <img src="assets/hero-kids.png" alt="Indian boy model smiling in streetwear hoodie at Kilo Kulture" width="768" height="1024" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Kicker: Inspired by new lifestyle (Image 1 reference) -->
+        <div class="hero__lifestyle-kicker" aria-hidden="true">
+          <span class="hero__lifestyle-title">INSPIRED BY<br>NEW LIFESTYLE</span>
+          <img src="assets/hero-arrow.png" alt="" class="hero__lifestyle-arrow" width="38" height="29">
+        </div>
+
+        <!-- Oval Capsule Switcher (Image 1 reference with offset black shadow) -->
+        <div class="hero__capsule-switcher" id="heroCapsules" aria-label="Switch model preview">
+          <button class="hero__capsule-item is-primary" data-switch="men" type="button" title="Switch to Men">
+            <div class="hero__capsule-card">
+              <span class="hero__capsule-shadow" aria-hidden="true"></span>
+              <div class="hero__capsule-body">
+                <img src="assets/thumb-men.jpg" alt="Men preview" class="hero__capsule-pic">
+              </div>
+            </div>
+          </button>
+
+          <button class="hero__capsule-item is-secondary" data-switch="children" type="button" title="Switch to Children">
+            <div class="hero__capsule-card">
+              <span class="hero__capsule-shadow" aria-hidden="true"></span>
+              <div class="hero__capsule-body">
+                <img src="assets/thumb-kids.jpg" alt="Children preview" class="hero__capsule-pic">
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-
-  <a class="ticket hero__ticket" href="#haul" aria-label="Sample weighing ticket. Open the haul planner.">
-    <div class="ticket__top">
-      <b>KILO KULTURE</b><span>Weighing Fashion</span>
-    </div>
-    <p class="ticket__meta"><span>Sample ticket</span><span>No. 0001</span></p>
-    <ul class="ticket__lines">
-      <li><span>T-shirt x 2</span><span>0.36 kg</span></li>
-      <li><span>Shirt x 1</span><span>0.25 kg</span></li>
-      <li><span>Jeans x 1</span><span>0.65 kg</span></li>
-    </ul>
-    <p class="ticket__sum"><span>Weight on scale</span><b>1.26 kg</b></p>
-    <p class="ticket__sum"><span>Amount</span><b>weight x store rate</b></p>
-    <p class="ticket__foot">Pay for weight, not labels.</p>
-  </a>
 </section>
 
 <section class="idea" id="idea">
@@ -92,6 +180,104 @@
         </div>
       </div>
       <p class="read__note">Weights are approximate and vary by fabric and size. The store scale is the final word.</p>
+    </div>
+  </div>
+</section>
+
+<section class="lookbook" id="lookbook" aria-label="Curated racks lookbook">
+  <div class="wrap">
+    <div class="lookbook__bento" id="lookbookGrid">
+      <!-- 2-Span Header Card (Photo 2 Explore Our Categories format + Photo 1 Curated Racks content) -->
+      <div class="lookbook__hero-card">
+        <div>
+          <p class="eyebrow lookbook__eyebrow">CURATED RACKS</p>
+          <h2 class="lookbook__title">Explore Our Racks.</h2>
+          <p class="lookbook__sub">Pick your favourite pieces by the kilo. Authentic branded collections refreshed weekly across all store racks.</p>
+        </div>
+
+        <div class="lookbook__cats-wrap">
+          <ul class="lookbook__cats" id="lookbookCats">
+            <li><button class="lookbook__cat is-active" data-filter="all" type="button"><span class="dash">—</span> ALL</button></li>
+            <li><button class="lookbook__cat" data-filter="outerwear" type="button"><span class="dash">—</span> OUTERWEAR</button></li>
+            <li><button class="lookbook__cat" data-filter="denim" type="button"><span class="dash">—</span> DENIM</button></li>
+            <li><button class="lookbook__cat" data-filter="tops" type="button"><span class="dash">—</span> TOPS</button></li>
+            <li><button class="lookbook__cat" data-filter="bottoms" type="button"><span class="dash">—</span> BOTTOMS</button></li>
+            <li><button class="lookbook__cat" data-filter="footwear" type="button"><span class="dash">—</span> FOOTWEAR</button></li>
+          </ul>
+        </div>
+
+        <div class="lookbook__cta">
+          <a class="btn btn--blue lookbook__btn" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">
+            <span>Explore @kilo_kulture</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 1: Fear of God Jacket (Outerwear) -->
+      <a class="lookbook__card" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener" data-category="outerwear" aria-label="Outerwear Jacket - Kilo Kulture">
+        <div class="lookbook__img-box">
+          <img src="assets/lookbook-1.jpg" alt="Fear of God Jacket" loading="lazy" width="260" height="260">
+        </div>
+        <div class="lookbook__info">
+          <span class="lookbook__tag">OUTERWEAR</span>
+        </div>
+      </a>
+
+      <!-- Card 2: Vintage Wide Leg Denim (Denim) -->
+      <a class="lookbook__card" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener" data-category="denim" aria-label="Denim Jeans - Kilo Kulture">
+        <div class="lookbook__img-box">
+          <img src="assets/lookbook-2.jpg" alt="Vintage Wide Leg Denim" loading="lazy" width="260" height="260">
+        </div>
+        <div class="lookbook__info">
+          <span class="lookbook__tag">DENIM</span>
+        </div>
+      </a>
+
+      <!-- Card 3: Tie-Dye Windbreaker Jacket (Outerwear) -->
+      <a class="lookbook__card" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener" data-category="outerwear" aria-label="Tie-Dye Windbreaker - Kilo Kulture">
+        <div class="lookbook__img-box">
+          <img src="assets/lookbook-3.jpg" alt="Tie-Dye Windbreaker Jacket" loading="lazy" width="260" height="260">
+        </div>
+        <div class="lookbook__info">
+          <span class="lookbook__tag">OUTERWEAR</span>
+        </div>
+      </a>
+
+      <!-- Card 4: Cobalt Blue Heavy T-Shirt (Tops) -->
+      <a class="lookbook__card" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener" data-category="tops" aria-label="Cobalt Heavy T-Shirt - Kilo Kulture">
+        <div class="lookbook__img-box">
+          <img src="assets/lookbook-4.jpg" alt="Cobalt Blue Heavy T-Shirt" loading="lazy" width="260" height="260">
+        </div>
+        <div class="lookbook__info">
+          <span class="lookbook__tag">TOPS</span>
+        </div>
+      </a>
+
+      <!-- Card 5: Black Parachute Cargo Pants (Bottoms) -->
+      <a class="lookbook__card" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener" data-category="bottoms" aria-label="Black Parachute Cargo Pants - Kilo Kulture">
+        <div class="lookbook__img-box">
+          <img src="assets/lookbook-5.jpg" alt="Black Parachute Cargo Pants" loading="lazy" width="260" height="260">
+        </div>
+        <div class="lookbook__info">
+          <span class="lookbook__tag">BOTTOMS</span>
+        </div>
+      </a>
+
+      <!-- Card 6: Crimson Relaxed Shirt (Tops) -->
+      <a class="lookbook__card" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener" data-category="tops" aria-label="Crimson Relaxed Shirt - Kilo Kulture">
+        <div class="lookbook__img-box">
+          <img src="assets/lookbook-6.jpg" alt="Crimson Relaxed Shirt" loading="lazy" width="260" height="260">
+        </div>
+        <div class="lookbook__info">
+          <span class="lookbook__tag">TOPS</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="lookbook__empty" id="lookbookEmpty" hidden>
+      <p>Fresh stock dropping soon in this category!</p>
+      <a class="btn btn--blue" href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">Follow @kilo_kulture for drops</a>
     </div>
   </div>
 </section>
@@ -137,35 +323,108 @@
   </div>
 </section>
 
+
+
 <section class="stores" id="stores">
   <div class="wrap">
-    <div class="stores__head">
-      <p class="eyebrow">Stores</p>
-      <h2>Find your nearest Kilo Kulture.</h2>
-      <p class="lead">Kilo Kulture has stores across Gujarat. Addresses, timings and new stock are posted on Instagram, and you can message us there to check before you travel.</p>
+    <div class="stores__grid">
+      <div class="stores__info-col">
+        <div class="stores__head">
+          <p class="eyebrow">Stores</p>
+          <h2>Find your nearest Kilo Kulture.</h2>
+          <p class="lead">Kilo Kulture has stores across Gujarat.<br>Addresses, timings and new stock are posted on Instagram, and you can message us there to check before you travel.</p>
+        </div>
+
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th scope="col">City</th>
+              <th scope="col">Region</th>
+              <th scope="col">Store Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><a href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Chandkheda+Ahmedabad" target="_blank" rel="noopener">Chandkheda</a></th>
+              <td>Ahmedabad</td>
+              <td><a class="tbl__map-link" href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Chandkheda+Ahmedabad" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Store Location ↗</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Gandhinagar" target="_blank" rel="noopener">Gandhinagar</a></th>
+              <td>Central Gujarat</td>
+              <td><a class="tbl__map-link" href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Gandhinagar" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Store Location ↗</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Himmatnagar" target="_blank" rel="noopener">Himmatnagar</a></th>
+              <td>North Gujarat</td>
+              <td><a class="tbl__map-link" href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Himmatnagar" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Store Location ↗</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Visnagar" target="_blank" rel="noopener">Visnagar</a></th>
+              <td>North Gujarat</td>
+              <td><a class="tbl__map-link" href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Visnagar" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Store Location ↗</a></td>
+            </tr>
+            <tr>
+              <th scope="row"><a href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Bhuj" target="_blank" rel="noopener">Bhuj</a></th>
+              <td>Kutch</td>
+              <td><a class="tbl__map-link" href="https://www.google.com/maps/search/?api=1&query=Kilo+Kulture+Bhuj" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Store Location ↗</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="tbl__note">More locations are listed in our Instagram bio.</p>
+      </div>
+
+      <!-- Right Column: The Branded Store Map Pin Visual Card (Image 2 into Image 1) -->
+      <div class="stores__card">
+        <div class="stores__card-head">
+          <span class="stores__card-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            5 ACTIVE LOCATIONS
+          </span>
+          <h3 class="stores__card-title">Walk into any Kilo Kulture</h3>
+          <p class="stores__card-desc">Pick what you like, weigh it on our real scale, pay by weight.</p>
+        </div>
+
+        <div class="stores__pin-visual">
+          <img src="assets/store-map-pin.svg" alt="Kilo Kulture Store Locator Map Pin" class="stores__pin-img" width="340" height="340" loading="lazy">
+        </div>
+
+        <div class="stores__card-foot">
+          <div class="stores__timing-box">
+            <span class="stores__timing-dot" aria-hidden="true"></span>
+            <div>
+              <b class="stores__timing-label">Store Timings</b>
+              <span class="stores__timing-val">10:30 AM – 9:30 PM (All 7 Days)</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <table class="tbl">
-      <thead><tr><th scope="col">City</th><th scope="col">Region</th><th scope="col">Directions and timings</th></tr></thead>
-      <tbody>
-        <tr><th scope="row">Chandkheda</th><td>Ahmedabad</td><td><a href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">Instagram</a></td></tr>
-        <tr><th scope="row">Gandhinagar</th><td>Central Gujarat</td><td><a href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">Instagram</a></td></tr>
-        <tr><th scope="row">Himmatnagar</th><td>North Gujarat</td><td><a href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">Instagram</a></td></tr>
-        <tr><th scope="row">Visnagar</th><td>North Gujarat</td><td><a href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">Instagram</a></td></tr>
-        <tr><th scope="row">Bhuj</th><td>Kutch</td><td><a href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">Instagram</a></td></tr>
-      </tbody>
-    </table>
-    <p class="tbl__note">More locations are listed in our Instagram bio.</p>
   </div>
 </section>
 
 <section class="faq" id="faq">
   <div class="wrap faq__g">
-    <h2>Questions people ask at the counter.</h2>
-    <div class="faq__l">
-      <details open><summary>How is the price worked out?</summary><p>By the weight of what you pick, on the store scale. The rate per kilo is shown in store. Whatever the brand or style, the same rate applies.</p></details>
-      <details><summary>Are the clothes really branded?</summary><p>Yes. The stock is branded clothing. The labels you find change from rack to rack and week to week, so it is worth looking through.</p></details>
-      <details><summary>How do I get more pieces for my kilo?</summary><p>Choose lighter garments. T-shirts, shirts, kurtis and kidswear weigh far less than jeans, sweatshirts and jackets, so the same kilo holds more of them.</p></details>
-      <details><summary>How do I see what is new?</summary><p>Open the New Arrivals highlight on <a href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">our Instagram</a>. New stock is shown there first.</p></details>
+    <div class="faq__media">
+      <div class="faq__img-wrap">
+        <img src="assets/counter-weighing.jpg" alt="Family weighing clothes by weight at Kilo Kulture store counter" width="1024" height="682" loading="lazy">
+        <div class="faq__img-tag">
+          <span>KILO KULTURE</span>
+          <b>Clothes Sold By Weight</b>
+        </div>
+      </div>
+    </div>
+    <div class="faq__content">
+      <div class="faq__head">
+        <p class="eyebrow">COMMON QUERIES</p>
+        <h2>Questions people ask at the counter.</h2>
+      </div>
+      <div class="faq__l">
+        <details open><summary>How is the price worked out?</summary><p>By the weight of what you pick, on the store scale. The rate per kilo is shown in store. Whatever the brand or style, the same rate applies.</p></details>
+        <details><summary>Are the clothes really branded?</summary><p>Yes. The stock is branded clothing. The labels you find change from rack to rack and week to week, so it is worth looking through.</p></details>
+        <details><summary>How do I get more pieces for my kilo?</summary><p>Choose lighter garments. T-shirts, shirts, kurtis and kidswear weigh far less than jeans, sweatshirts and jackets, so the same kilo holds more of them.</p></details>
+        <details><summary>How do I see what is new?</summary><p>Open the New Arrivals highlight on <a href="https://www.instagram.com/kilo_kulture/" target="_blank" rel="noopener">our Instagram</a>. New stock is shown there first.</p></details>
+      </div>
     </div>
   </div>
 </section>
